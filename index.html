@@ -197,7 +197,7 @@ tr.sel td.n{color:#1B5E20}
 
 <script>
 var GL=[
-{v:'VK',l:'VK7/VK6/VK5 (SSM) / Turus I (SSPA)',ssm:'VK7 / VK6 / VK5',sspa:'Turus I',j:'Profesor Madya / Profesor',b:'VU_A'},
+{v:'VK',l:'VK7/VK6/VK5/Khas (SSM)',ssm:'VK7 / VK6 / VK5 / Khas',sspa:'',j:'Profesor Madya / Profesor',b:'VU_A'},
 {v:'54',l:'Gred 54 (SSM) / 14 (SSPA)',ssm:'N54 / DG54 / DS54',sspa:'SSPA 14',j:'Peg. Tadbir / Guru Bahasa / Pensyarah Kanan',b:'G53_54'},
 {v:'53',l:'Gred 53 (SSM) / 14 (SSPA)',ssm:'DS53',sspa:'SSPA 14',j:'Pensyarah Kanan',b:'G53_54'},
 {v:'52',l:'Gred 52 (SSM) / 13 (SSPA)',ssm:'N52 / DG52 / DS52',sspa:'SSPA 13',j:'Peg. Tadbir / Guru Bahasa / Pensyarah Kanan',b:'G45_52'},
@@ -247,7 +247,7 @@ if(!sv){document.getElementById('res').className='result';gc.className='gc';retu
 var g=GL.find(function(x){return x.v===sv});
 if(!g)return;
 var b=g.b,ir=jn==='rasmi',isLN=lok==='ln',ng=sC,k=CK[ng]||null,kr=ir?KR:KK_;
-gc.innerHTML='<b>'+g.ssm+'</b> &nbsp;·&nbsp; '+g.sspa+' &nbsp;·&nbsp; '+g.j;
+gc.innerHTML='<b>'+g.ssm+'</b>'+(g.sspa?' &nbsp;·&nbsp; '+g.sspa:'')+' &nbsp;·&nbsp; '+g.j;
 gc.className='gc sh';
 document.getElementById('res').className='result sh';
 
